@@ -1,7 +1,7 @@
 {
     "name": "nikolaychuk/assets-work",
     "description": "working with assets",
-    "version": "1.0.0",
+    "version": "1.0.2",
     "require": {
         "php": "~5.6.5|7.0.2|7.0.4|~7.0.6"
     },
