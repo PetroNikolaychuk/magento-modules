@@ -2,7 +2,7 @@
 
 namespace Nickolaychuk\AssetsWork\Controller\Adminhtml\Assets;
 
-abstract class Index extends \Magento\Backend\App\Action
+class Index extends \Magento\Framework\App\Action\Action
 {
     /**
      * Authorization level of a basic admin session
@@ -35,9 +35,6 @@ abstract class Index extends \Magento\Backend\App\Action
      */
     public function execute()
     {
-
-//        $this->_view->loadLayout();
-//        $this->_view->renderLayout();
         return $this->resultPageFactory->create();
     }
 

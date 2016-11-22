@@ -2,13 +2,13 @@
 
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
     <menu>
-        <add id="Nikolaychuk_AssetsWork::assets_data" 
+        <add id="Nikolaychuk_AssetsWork::assets" 
              title="Data" translate="title"
              module="Nikolaychuk_AssetsWork" sortOrder="99"
              parent="Magento_Backend::content_elements"         
 
-             action="adminhtml/assets_data"
+             action="adminhtml/assets"
 
-             resource="Nikolaychuk_AssetsWork::assets_data"/>
+             resource="Nikolaychuk_AssetsWork::assets"/>
     </menu>
 </config>
