@@ -2,13 +2,34 @@
 
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
     <menu>
-        <add id="Nikolaychuk_AssetsWork::assets" 
+        <add id="Nikolaychuk_AssetsWork::assets"
              title="Data" translate="title"
              module="Nikolaychuk_AssetsWork" sortOrder="99"
-             parent="Magento_Backend::content_elements"         
+             parent="Magento_Backend::content_elements"
 
-             action="adminhtml/assets"
+             action="assetswork/assets/index"
 
-             resource="Nikolaychuk_AssetsWork::assets"/>
+             resource="Nikolaychuk_AssetsWork::manage_assets"
+        />
     </menu>
+    <menu>
+        <add id="Nikolaychuk_AssetsWork::main_menu" title="Simple News"
+             module="Nikolaychuk_AssetsWork" sortOrder="20"
+             resource="Nikolaychuk_AssetsWork::assetswork" />
+        <add id="Nikolaychuk_AssetsWork::add_news" title="Add News"
+             module="Nikolaychuk_AssetsWork" sortOrder="1" parent="Nikolaychuk_AssetsWork::main_menu"
+             action="assetswork/news/new" resource="Nikolaychuk_AssetsWork::manage_news" />
+        <add id="Nikolaychuk_AssetsWork::manage_news"
+             title="Manage News"
+             module="Nikolaychuk_AssetsWork"
+             sortOrder="2"
+             parent="Nikolaychuk_AssetsWork::main_menu"
+             action="assetswork/news/index"
+             resource="Nikolaychuk_AssetsWork::manage_news" />
+        <add id="Nikolaychuk_AssetsWork::configuration" title="Configurations"
+             module="Nikolaychuk_AssetsWork" sortOrder="3" parent="Nikolaychuk_AssetsWork::main_menu"
+             action="adminhtml/system_config/edit/section/assetswork"
+             resource="Nikolaychuk_AssetsWork::configuration" />
+    </menu>
+
 </config>

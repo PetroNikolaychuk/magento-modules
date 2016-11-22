@@ -1,10 +1,10 @@
 <?php
 
-namespace Nikolaychuk\AssetsWork\Controller\Adminhtml\Assets;
+namespace Nikolaychuk\AssetsWork\Controller\Adminhtml\News;
 
-use Nikolaychuk\AssetsWork\Controller\Adminhtml\Assets;
+use Nikolaychuk\AssetsWork\Controller\Adminhtml\News;
 
-class Index extends Assets
+class Index extends News
 {
     /**
      * @return void

@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:noNamespaceSchemaLocation="../../../../../../../lib/internal/Magento/
+Framework/View/Layout/etc/page_configuration.xsd">
+    <update handle="formkey"/>
+    <update handle="assetswork_news_grid_block"/>
+    <body>
+        <referenceContainer name="content">
+            <block class="Nikolaychuk\AssetsWork\Block\Adminhtml\News"
+                   name="nikolaychuk_assetswork_news.grid.container" />
+        </referenceContainer>
+    </body>
+</page>
